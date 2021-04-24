@@ -27,16 +27,31 @@ namespace Day3Solution
 
             foreach (string line in input)
             {
-                int column = 4;
+                int lineLength = line.Length();
+                int column = 1;
                 
-                for (row = 0; row < 11; row++)
+                do
                 {
                     if (line.Substring(column, 1) == "#")
                     {
                         column = column + 3;
                         tree++;
                     }
+
+                    if (column > lineLength)
+                    {
+                        column = column % lineLength;
+                    }
                 }
+                while (line != null);
+                //for (row = 0; row < 11; row++) //No longer needed because I just need to extend to the right
+                // {
+                //     if (line.Substring(column, 1) == "#")
+                //     {
+                //         column = column + 3;
+                //         tree++;
+                //     }
+                // }
                 
             }
            return tree;
