@@ -23,7 +23,7 @@ namespace Day3Solution
         public static int PartOne(string[] input) 
         {
             int row;
-            int tree = 0;
+            int tree = 0;//
 
             foreach (string line in input)
             {
