@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\akbud\\OneDrive\\Desktop\\AoC2020Solutions\\Day3Solution\\Day3Solution.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\akbud\\OneDrive\\Desktop\\AoC2020Solutions\\Day3Solution\\Day3Solution.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akbud\\OneDrive\\Desktop\\AoC2020Solutions\\Day3Solution\\Day3Solution.csproj",
+        "projectName": "Day3Solution",
+        "projectPath": "C:\\Users\\akbud\\OneDrive\\Desktop\\AoC2020Solutions\\Day3Solution\\Day3Solution.csproj",
+        "packagesPath": "C:\\Users\\akbud\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akbud\\OneDrive\\Desktop\\AoC2020Solutions\\Day3Solution\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\akbud\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

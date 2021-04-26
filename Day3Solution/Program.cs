@@ -34,7 +34,6 @@ namespace Day3Solution
                 while (row != input.Length - 1)
                 {
                     row++;
-                    
                     column += 3;
 
                     if (column >= lineLength)
