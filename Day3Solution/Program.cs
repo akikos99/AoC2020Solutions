@@ -47,6 +47,7 @@ namespace Day3Solution
                     }
             }
 
+
             return trees;
         }
 
