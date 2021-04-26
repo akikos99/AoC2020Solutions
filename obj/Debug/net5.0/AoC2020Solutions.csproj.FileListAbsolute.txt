@@ -1,0 +1,5 @@
+C:\Users\akbud\OneDrive\Desktop\AoC2020Solutions\obj\Debug\net5.0\AoC2020Solutions.csprojAssemblyReference.cache
+C:\Users\akbud\OneDrive\Desktop\AoC2020Solutions\obj\Debug\net5.0\AoC2020Solutions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akbud\OneDrive\Desktop\AoC2020Solutions\obj\Debug\net5.0\AoC2020Solutions.AssemblyInfoInputs.cache
+C:\Users\akbud\OneDrive\Desktop\AoC2020Solutions\obj\Debug\net5.0\AoC2020Solutions.AssemblyInfo.cs
+C:\Users\akbud\OneDrive\Desktop\AoC2020Solutions\obj\Debug\net5.0\AoC2020Solutions.csproj.CoreCompileInputs.cache
