@@ -19,44 +19,45 @@ namespace Day3Solution
             Console.WriteLine($"Part two solution: {PartTwo(input)}\n");
         }
 
-        private static int PartTwo(string[] input) 
+        private static long PartTwo(string[] input) 
         {
-            int trees = 0;
 
             //List<int> slopes = new List<int>;
+            //List<(int, int)[]> slope = {(3,1), (1,1), (7,1), (1,2), (5,1)};
             (int, int)[] slope = {(3,1), (1,1), (7,1), (1,2), (5,1)};
-            IEnumerable<int> output = slope.Select(x => PartOne(input, x));
+            //IEnumerable<int> output = slope.Select(x => PartOne(input, x));
             //new (int, int)[] {(1,1), (5,1), (7,1), (1,2)}.Select(x => PartOne(input, x));
             //System.Console.WriteLine(output);
-            int total = 1;
-            foreach (int i in output)
+            long total = 1;
+
+            foreach ((int, int) i in slope)
             {
-                int count = 1;
-                System.Console.WriteLine($"{count}: {i}");
-                total = i * total;
-                count++;
+                long output = PartOne(input, i);
+
+                //System.Console.WriteLine($"{count}: {j}");
+                System.Console.WriteLine($"this is the output:{output}");
+                total = output * total;
+                System.Console.WriteLine($"this is the total:{total}");
             }
 
             return total;
         }
-        private static int PartOne(string[] input, (int, int) slope) 
+
+        private static int PartOne(string[] input, (int, int) slope)
         {
             int trees = 0;
 
             // foreach (string line in input)
             // {
                 int lineLength = input[0].Length;
-                int totalLength = input.Length;
                 int row = 0;
                 int column = 0;
-                System.Console.WriteLine(totalLength);
+                //System.Console.WriteLine(lineLength);
 
-
-                while (row <= 323)
+                while (row != input.Length - 1)
                 {
-                    //char map = input[row][column];
-                    row += slope.Item1;
-                    column += 1;//slope.Item2;
+                    row += slope.Item2;
+                    column += slope.Item1;
 
                     if (column >= lineLength)
                     {
@@ -64,16 +65,50 @@ namespace Day3Solution
                     }
 
                     if (input[row].Substring(column, 1)  == "#")
-                    //if (map.ToString()  == "#")
                     {
                         trees++;
-                        
                     }
-
-                }  
-            
-            return trees;
+            }
+        return trees;
         }
+        // private static int PartOne(string[] input, (int, int) slope) 
+        // {
+        //     int trees = 0;
+
+        //     // foreach (string line in input)
+        //     // {
+        //         int lineLength = input[0].Length;
+        //         int totalLength = input.Length;
+        //         int row = 0;
+        //         int column = 0;
+        //         //System.Console.WriteLine(totalLength);
+
+
+        //         //while (row <= 323)
+        //         while(row !< totalLength)
+        //         {
+        //             //char map = input[row][column];
+                    
+
+        //             if (column >= lineLength)
+        //             {
+        //                 column = column % lineLength;
+        //             }
+
+        //             //System.Console.WriteLine(row);
+        //             if (input[row].Substring(column, 1)  == "#")
+        //             //if (map.ToString()  == "#")
+        //             {
+        //                 trees++;
+        //             }
+
+        //             row += slope.Item1;
+        //             column += slope.Item2;//slope.Item2;
+                    
+        //         }  
+            
+        //     return trees;
+        // }
 
                 // }
                 //for (row = 0; row < 11; row++) //No longer needed because I just need to extend to the right
